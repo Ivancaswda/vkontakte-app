@@ -211,7 +211,7 @@ const ProfilePage = () => {
 
 
 
-    const [about, setAbout] = useState("")
+    const [about, setAbout] = useState(userData.about || "")
 
     const [experiences, setExperiences] = useState([])
     const fetchStatus = async () => {
