@@ -206,12 +206,13 @@ const ProfilePage = () => {
                 about
         }))
         await getUserProfile(username)
-        setIsEditing(false)
+
+
     }
 
 
 
-    const [about, setAbout] = useState(userData.about || "")
+    const [about, setAbout] = useState(userData?.about )
 
     const [experiences, setExperiences] = useState([])
     const fetchStatus = async () => {
